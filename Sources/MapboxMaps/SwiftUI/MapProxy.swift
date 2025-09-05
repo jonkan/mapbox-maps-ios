@@ -14,6 +14,8 @@ public struct MapProxy {
     /// Manages styles, feature queries, and other map API.
     public var map: MapboxMap? { provider.mapView?.mapboxMap }
 
+    public var mapView: MapView? { provider.mapView }
+
     /// Extensible API for driving the map camera.
     @available(*, deprecated, message: "Use Map(viewport:) initializer instead.")
     public var viewport: ViewportManager? { provider.mapView?.viewport }
